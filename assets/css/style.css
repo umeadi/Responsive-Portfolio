@@ -16,7 +16,7 @@ header {
     border-bottom: 2px solid #cccccc;
 }
 
-.head {
+.header {
     width: 960px;
     margin: auto;
 }
@@ -193,4 +193,388 @@ form {
 
 ::placeholder{
     color: #cecece;
+}
+
+
+/* Small Desktop */
+@media screen and (min-width: 769px) and (max-width: 980px) {
+    
+    h2 {
+        padding: 1.5rem 0px;
+        font-size: 1.5rem;
+    }
+
+    header {
+        height: fit-content;
+    }
+
+    header h1 {
+        line-height: inherit;
+        height: inherit;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header::after {
+        content: "";
+		display: block;
+        clear: both;
+    }
+
+    nav {
+        padding: 0rem;
+        height: fit-content;
+        margin-right: 2rem;
+    }
+
+    nav a {
+        line-height: 77px;
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
+
+    ul::after {
+		content: "";
+		display: block;
+		clear: both;
+    }
+
+    section {
+        width: 60vw;
+        margin: 2rem;
+    }
+
+    .biojpg {
+        width: 20%;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .bio {
+        line-height: 1.5rem;
+        font-size: .9rem;
+    }
+
+    .portfolio-container {
+        padding-top: 1rem;
+        text-align: justify;
+    }
+
+    .portfolio-item {
+        margin: 0;
+        display: inline-block;
+        width: 48%;
+        border: none;
+        height: initial;
+        margin-bottom: 1rem;
+        border: solid 1px lightgrey;
+    }
+
+    .portfolio-item a {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .biojpg {
+        width: 100%;
+        max-width: initial;
+        margin: auto;
+        display: block;
+    }
+
+    .portfolio-caption {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .portfolio-container br {
+        display: none;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+
+    input {
+        width: -webkit-fill-available;
+        padding: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    textarea {
+        width: -webkit-fill-available;
+        padding: .5rem;
+        margin-bottom: 0;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+    
+    footer p {
+        font-size: x-small;
+    }
+
+}
+
+
+/* Tablet */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    
+    h2 {
+        padding: 1.5rem 0px;
+        font-size: 1.5rem;
+    }
+
+
+    header {
+        width: 100%;
+        height: auto;
+        height: fit-content;
+    }
+
+    .header {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .header::after {
+        content: "";
+		display: block;
+        clear: both;
+    }
+
+    header h1 {
+        height: inherit;
+        line-height: inherit;
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    nav {
+        padding: 0rem;
+        height: fit-content;
+    }
+
+    nav a {
+        line-height: 75px;
+        font-size: small;
+        padding: .5rem 1rem;
+    }
+
+    ul::after {
+		content: "";
+		display: block;
+		clear: both;
+    }
+
+    section {
+        margin: auto 1rem;
+        width: auto;
+        padding: 0rem 1rem;
+        margin-top: 1rem;
+    }
+
+    .biojpg {
+        padding-right: 1rem;
+        width: 30%;
+    }
+
+    .bio {
+        line-height: 1.5rem;
+        font-size: small;
+    }
+
+    .portfolio-container {
+        padding-top: 1rem;
+        text-align: justify;
+    }
+
+    .portfolio-item {
+        margin: 0;
+        display: inline-block;
+        width: 48%;
+        border: none;
+        height: initial;
+        margin-bottom: 1rem;
+        border: solid 1px lightgrey;
+    }
+
+    .portfolio-item a {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .biojpg {
+        width: 100%;
+        max-width: initial;
+        margin: auto;
+        display: block;
+    }
+
+    .portfolio-caption {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .portfolio-container br {
+        display: none;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+
+    input {
+        width: -webkit-fill-available;
+        padding: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    textarea {
+        width: -webkit-fill-available;
+        padding: .5rem;
+        margin-bottom: 0;
+    }
+    
+    button {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: x-small;
+    }
+}
+
+
+/* Smartphone */
+@media screen and (max-width: 640px) {
+    
+    p {
+        font-size: small;
+    }
+
+    header {
+        position: static;
+        width: 100vw;
+        height: auto;
+    }
+
+    .header {
+        width: 100vw;
+    }
+
+    header h1 {
+        width: 100vw;
+        float: none;
+        height: inherit;
+        line-height: inherit;
+        font-size: 1.5rem;
+        padding: 1rem 0px;
+    }
+
+    nav {
+        float: none;
+        width: 100vw;
+        padding: 0px;
+        font-size: .8rem;
+    }
+
+    ul {
+        margin: auto;
+        width: fit-content;
+    }
+
+    section {
+        margin: auto 1rem;
+        width: auto;
+        padding: 0rem 1rem;
+        margin-top: 1rem;
+    }
+
+    .container {
+        padding: 1rem 0px;
+    }
+
+    h2 {
+        padding: 1rem 0px;
+    }
+
+    .biojpg {
+        margin: auto;
+        display: block;
+        float: none;
+        padding-right: 0;
+        padding-bottom: 1rem;
+        width: 40%;
+    }
+
+    .portfolio-container {
+        padding-top: 1rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .portfolio-item {
+        margin-bottom: 1rem;
+        margin-right: 0;
+        height: initial;
+        border: none;
+        display: block;
+    }
+
+    .portfolio-item a {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .biojpg {
+        max-width: initial;
+        width: 50%;
+        border: solid 1px lightgrey;
+        display: block;
+        margin: auto;
+    }
+
+    .portfolio-caption {
+        width: 50%;
+        padding: 1rem 0;
+    }
+
+    .portfolio-container br {
+        display: none;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+
+    input {
+        width: -webkit-fill-available;
+        padding: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    textarea {
+        width: -webkit-fill-available;
+        padding: .5rem;
+        margin-bottom: 0;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: x-small;
+    }
+
 }
